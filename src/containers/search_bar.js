@@ -35,7 +35,7 @@ class SearchBar extends Component{
           placeholder="Get a 5 days forcast in your favorite cities"
           //<!-- Since we use a callback that uses this inside, than we must bind its context in the constructor -->
           value={this.state.term}
-          onChange={this.onInputChange}/>
+          onChange={this.onInputChange} />
         <span className="input-group-btn">
           <button type="submit" className="btn btn-secondary">Submit</button>
         </span>
