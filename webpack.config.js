@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: PROD ? 'bundle.min.js' : 'bundle.js'
+    filename: 'bundle.js' //PROD ? 'bundle.min.js' : 'bundle.js'
   },
   plugins: PROD ? [
     new webpack.optimize.UglifyJsPlugin({

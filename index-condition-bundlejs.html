@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+  <script type="text/javascript">
+    $( document ).ready(function() {$.get("/bundle.min.js")
+                                      .done(setBundleScript("/bundle.min.js"))
+                                      .fail(setBundleScript("/bundle.js"));});
+
+    function setBundleScript(source){
+      console.log("Inside bundle");
+      var script   = document.createElement("script");
+      script.type  = "text/javascript";
+      script.src   = source;    // use this for linked script
+      document.body.appendChild(script);
+    }
+  </script>
+</html>
