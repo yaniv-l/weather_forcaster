@@ -28,6 +28,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "express": "3.3.5",
     "webpack": "^1.12.9",
     "axios": "^0.13.1",
     "babel-core": "^6.2.1",
